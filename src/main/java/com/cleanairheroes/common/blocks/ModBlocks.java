@@ -1,6 +1,11 @@
 package com.cleanairheroes.common.blocks;
 
 import com.cleanairheroes.CleanAirHeroesMod;
+import com.cleanairheroes.common.blocks.landmarks.VarnaOperaHouseBlock;
+import com.cleanairheroes.common.blocks.landmarks.ZonguldakMiningMuseumBlock;
+import com.cleanairheroes.common.blocks.landmarks.OdesaOperaTheatreBlock;
+import com.cleanairheroes.common.blocks.landmarks.TrabzonHagiaSophiaBlock;
+import com.cleanairheroes.common.blocks.landmarks.BrasovBlackChurchBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -90,6 +95,27 @@ public class ModBlocks {
     public static final RegistryObject<Block> COAL_BURNING_FURNACE = registerBlock("coal_burning_furnace",
         () -> new CoalBurningFurnaceBlock(BlockBehaviour.Properties.of(Material.STONE)
             .strength(3.0f).sound(SoundType.STONE)));
+
+    // Landmark blocks
+    public static final RegistryObject<Block> VARNA_OPERA_HOUSE = registerBlock("varna_opera_house",
+        () -> new VarnaOperaHouseBlock(BlockBehaviour.Properties.of(Material.STONE)
+            .strength(3.5f).sound(SoundType.STONE)));
+    
+    public static final RegistryObject<Block> ZONGULDAK_MINING_MUSEUM = registerBlock("zonguldak_mining_museum",
+        () -> new ZonguldakMiningMuseumBlock(BlockBehaviour.Properties.of(Material.STONE)
+            .strength(4.0f).sound(SoundType.STONE)));
+    
+    public static final RegistryObject<Block> ODESA_OPERA_THEATRE = registerBlock("odesa_opera_theatre",
+        () -> new OdesaOperaTheatreBlock(BlockBehaviour.Properties.of(Material.STONE)
+            .strength(3.5f).sound(SoundType.STONE)));
+    
+    public static final RegistryObject<Block> TRABZON_HAGIA_SOPHIA = registerBlock("trabzon_hagia_sophia",
+        () -> new TrabzonHagiaSophiaBlock(BlockBehaviour.Properties.of(Material.STONE)
+            .strength(4.0f).sound(SoundType.STONE)));
+    
+    public static final RegistryObject<Block> BRASOV_BLACK_CHURCH = registerBlock("brasov_black_church",
+        () -> new BrasovBlackChurchBlock(BlockBehaviour.Properties.of(Material.STONE)
+            .strength(4.5f).sound(SoundType.STONE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
