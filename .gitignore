@@ -1,0 +1,46 @@
+# Gradle
+.gradle/
+build/
+out/
+classes/
+
+# Eclipse
+.project
+.metadata
+.classpath
+.settings/
+*.launch
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# NetBeans
+nb-configuration.xml
+
+# Visual Studio Code
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Minecraft
+run/
+logs/
+*.log
+
+# Forge MDK
+src/generated/
+
+# Cache
+.cache/
+
+# Development files
+images/
+resized/
+simple-build.ps1
+gradle-*.zip
+*.tmp

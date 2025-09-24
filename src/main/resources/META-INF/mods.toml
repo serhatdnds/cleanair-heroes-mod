@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+issueTrackerURL="https://github.com/cleanairheroes/cleanairheroes/issues"
+
+[[mods]]
+modId="cleanairheroes"
+version="1.0.0"
+displayName="Clean Air Heroes (Temiz Hava Kahramanları)"
+description='''
+Minecraft'ta hava kirliliğiyle mücadele eden çevre mühendisi olarak 5 farklı bölgede görev yapın.
+Varna, Zonguldak, Odesa, Trabzon ve Güneydoğu Romanya'da hava kalitesini iyileştirin!
+
+Combat air pollution as an environmental engineer across 5 different regions in Minecraft.
+Improve air quality in Varna, Zonguldak, Odesa, Trabzon, and Southeast Romania!
+'''
+logoFile="logo.png"
+credits="Clean Air Heroes Development Team"
+authors="Clean Air Heroes Team"
+
+[[dependencies.cleanairheroes]]
+modId="forge"
+mandatory=true
+versionRange="[43.3.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.cleanairheroes]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.19.2,1.20)"
+ordering="NONE"
+side="BOTH"
