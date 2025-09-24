@@ -3,9 +3,10 @@
 build/
 out/
 classes/
-gradle/
 gradle-*/
-**/gradle-wrapper.jar
+# Keep gradle wrapper but exclude large files
+!gradle/wrapper/
+gradle/wrapper/*.jar
 
 # Eclipse
 .project
