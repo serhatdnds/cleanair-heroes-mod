@@ -3,6 +3,9 @@
 build/
 out/
 classes/
+gradle/
+gradle-*/
+**/gradle-wrapper.jar
 
 # Eclipse
 .project
